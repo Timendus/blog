@@ -4,7 +4,8 @@
  */
 
 // What language are we currently in?
-const currentLanguage = localStorage.getItem("language") || "en";
+const postLanguage = document.querySelector('html').getAttribute('lang');
+const currentLanguage = localStorage.getItem("language") || postLanguage;
 let selectedLanguage = currentLanguage;
 
 // Is the user requesting a different language?
@@ -17,12 +18,10 @@ if ( parameters.has("language") ) {
   }
 }
 
-// Only show the elements with `data-lang={selectedLanguage}`, hide the others
+// Hide elements with the "wrong" language
 window.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll(`[data-lang]`).forEach(item => {
-    item.style.display =
-      item.attributes['data-lang']?.textContent == selectedLanguage
-      ? 'block'
-      : 'none';
+    if ( item.attributes['data-lang']?.textContent != selectedLanguage )
+      item.style.display = 'none';
   });
 });
