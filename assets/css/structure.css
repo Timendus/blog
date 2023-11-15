@@ -1,0 +1,57 @@
+html, body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+/* This is the thing we're actually scrolling in,
+   so we can do magical parallax stuff */
+.wrapper {
+  height: 100vh;
+  perspective: 10px;
+  perspective-origin: center center;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* This is the parallax-scrolling header image */
+.header-image {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 80%;
+  margin-bottom: -8em;  /* This pulls the content below over the image */
+  transform-style: preserve-3d;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate3d(0px, -15%, -10px) scale(2);
+  }
+
+  &.half-size {
+    height: 50%;
+
+    & img {
+      transform: translate3d(0px, -50%, -10px) scale(2);
+    }
+  }
+}
+
+/* This is the actual page content */
+section.page {
+  position: relative;
+  z-index: 1;
+
+  /* This gradient background scrolls over the parallax image */
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 4em,
+    var(--background-color) 4em,
+    var(--background-color) 100%
+  );
+
+  /* Whatever other content is in the page gets positioned on that background */
+}

@@ -1,0 +1,12 @@
+/*
+ * The footer is just another content box,
+ * but with these properties overwritten:
+ */
+
+footer.content {
+  max-width: 500px;
+
+  & p {
+    text-align: center;
+  }
+}

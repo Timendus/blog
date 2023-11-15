@@ -1,0 +1,16 @@
+# Build settings
+plugins:
+  - jemoji
+  - jekyll-paginate
+
+# Site settings
+title: "timfranssen.nl"
+description: > # this means to ignore newlines until "email:"
+  Just stuff I think up
+
+author: 'Tim Franssen'
+bio: Product developer, interaction designer, privacy advocate
+
+domain: "www.timfranssen.nl"
+url: "https://www.timfranssen.nl" # the base hostname & protocol for your site
+baseurl: ""

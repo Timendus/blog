@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+{% if page.image %}
+  <section class="header-image {% if page.layout != 'post' %}half-size{% endif %}">
+    <img src="{{ page.image }}"/>
+  </section>
+{% endif %}
+
+<section class="page">
+  <div class="content">
+    {% if page.layout == "post" %}
+      <div class="author">
+        {% if page.author %}
+          <img src="/assets/images/authors/{{ page.author }}.png"/>
+          <span class="name">{{ page.author }}</span>
+          <span class="description" data-lang="en">Guest author</span>
+          <span class="description" data-lang="nl">Gastauteur</span>
+        {% else %}
+          <img src="/assets/images/authors/{{ site.author }}.png"/>
+          <span class="name">{{ site.author }}</span>
+          <span class="description">{{ site.bio }}</span>
+        {% endif %}
+        {% if page.date %}
+          <span class="date">{{ page.date | date: "%-d-%-m-%Y" }}</span>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if page.title and page.titel %}
+      <p class="language" data-lang="en">Deze tekst is ook beschikbaar <a href="?language=nl">in het Nederlands</a>.</p>
+      <p class="language" data-lang="nl">This text is also available <a href="?language=en">in English</a>.</p>
+    {% endif %}
+
+    {% if page.title and page.titel %}
+      <h1 data-lang="en">{{ page.title }}</h1>
+      <h1 data-lang="nl">{{ page.titel }}</h1>
+    {% else %}
+      <h1>{{ page.title }}{{ page.titel }}</h1>
+    {% endif %}
+
+    {{ content }}
+  </div>
+</section>

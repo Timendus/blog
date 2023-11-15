@@ -1,0 +1,32 @@
+.content .author {
+  display: grid;
+  margin: 0 0 2em 0;
+  align-items: center;
+  grid-template-columns: 75px auto max-content;
+  grid-template-areas:
+  "image author date"
+  "image description description";
+
+  & img {
+    grid-area: image;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: none;
+  }
+  & .name {
+    grid-area: author;
+    font-size: 1.3em;
+    font-weight: 200;
+  }
+  & .description {
+    grid-area: description;
+    font-style: italic;
+    font-weight: 100;
+  }
+  & .date {
+    grid-area: date;
+    text-align: right;
+    font-weight: 200;
+  }
+}

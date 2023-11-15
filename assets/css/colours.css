@@ -1,0 +1,14 @@
+:root {
+  --background-color: #F8F8F8;
+  --content-background: white;
+  --font-color: #333333;
+  --font-color-light: #111111;
+  --link-color: #777777;
+  --brand: #7777FF;
+  --hr-color: #EEEEEE;
+  --codeblock-background: #272822;
+  --table-border: 1px solid #CCCCCC;
+  --table-header-background: #E8E8E8;
+  --table-even-row-background: #F8F8F8;
+}
+
