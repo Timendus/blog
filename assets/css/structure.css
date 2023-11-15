@@ -37,6 +37,17 @@ html, body {
       transform: translate3d(0px, -50%, -10px) scale(2);
     }
   }
+
+  @media screen and (max-width: 768px) {
+    &, &.half-size {
+      margin-bottom: -4em;
+      height: 30%;
+
+      & img {
+        transform: translate3d(0px, -115%, -10px) scale(2);
+      }
+    }
+  }
 }
 
 /* This is the actual page content */
