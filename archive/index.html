@@ -1,0 +1,40 @@
+---
+layout: page
+image: /assets/images/site/tim-in-winter.jpg
+title: All articles
+titel: Alle artikelen
+---
+
+<section class="paginated articles">
+  {% for post in paginator.posts %}
+    {% include article.html %}
+  {% endfor %}
+
+  <nav class="pagination" data-lang="en">
+    <p>
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}">&larr; Previous</a>
+      {% endif %}
+    </p>
+    <p>Page {{ paginator.page }} of {{ paginator.total_pages }}</p>
+    <p>
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}">Next  &rarr;</a>
+      {% endif %}
+    </p>
+  </nav>
+
+  <nav class="pagination" data-lang="nl">
+    <p>
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}">&larr; Vorige</a>
+      {% endif %}
+    </p>
+    <p>Pagina {{ paginator.page }} van {{ paginator.total_pages }}</p>
+    <p>
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}">Volgende  &rarr;</a>
+      {% endif %}
+    </p>
+  </nav>
+</section>

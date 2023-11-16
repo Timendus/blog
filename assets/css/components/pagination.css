@@ -1,5 +1,11 @@
 nav.pagination {
   display: flex;
+  width: 100%;
   padding: 1em;
   justify-content: space-between;
+
+  & p {
+    display: inline;
+    margin: 0;
+  }
 }

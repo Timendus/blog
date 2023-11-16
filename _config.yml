@@ -7,7 +7,8 @@ plugins:
 title: "timfranssen.nl"
 description: > # this means to ignore newlines until "email:"
   Just stuff I think up
-paginate: 8
+paginate: 6
+paginate_path: /archive/page:num/
 
 author: 'Tim Franssen'
 bio: Product developer, interaction designer, privacy advocate
