@@ -4,6 +4,11 @@ language: nl
 title: Wat we kunnen leren over toestemmingen in de zorg van het Japanse ruimtevaartprogramma uit de jaren '70
 image: /assets/images/articles/2022-04-08-leren-van-ruimtevaart/header.jpeg
 image_credit: Lambda 4S raket, foto copyright JAXA
+category: healthcare
+excerpt: >
+  Soms lijkt het alsof we moeten kiezen tussen privacy en praktijk. Of kiezen
+  tussen morrelen aan onze mores en terug naar de fax. De Japanners stonden
+  voor een vergelijkbare uitdaging, en maakten het onmogelijke mogelijk.
 date: 2022-04-08
 tags: 
   - Zorg

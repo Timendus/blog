@@ -3,7 +3,7 @@ layout: page
 title: About timfranssen.nl
 titel: Over timfranssen.nl
 permalink: /about/
-image: /assets/images/site/welcome.jpg
+image: /assets/images/site/tim-hiken.jpg
 ---
 
 <div data-lang="en" markdown="1">

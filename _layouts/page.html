@@ -31,4 +31,41 @@ layout: default
 
     {{ content }}
   </div>
+
+  {% if page.layout == "post" %}
+    {% assign cat = page.categories[0] %}
+    {% assign cat_list = site.categories[cat] %}
+    {% for post in cat_list %}
+      {% if post.url == page.url %}
+        {% assign pOffset = forloop.index0 | minus: 1 %}
+        {% assign nOffset = pOffset | plus: 2 %}
+        {% if forloop.first == false %}
+          {% assign next_post = cat_list[pOffset] %}
+        {% endif %}
+        {% if forloop.last == false %}
+          {% assign previous_post = cat_list[nOffset] %}
+        {% endif %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+
+    {% if previous_post or next_post %}
+      <div class="content">
+        <h1 data-lang="en">This may also interest you</h1>
+        <h1 data-lang="nl">Misschien vind je dit ook interessant</h1>
+
+        <div class="articles">
+          {% if previous_post %}
+            {% assign post = previous_post %}
+            {% include article.html %}
+          {% endif %}
+
+          {% if next_post %}
+            {% assign post = next_post %}
+            {% include article.html %}
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+  {% endif %}
 </section>

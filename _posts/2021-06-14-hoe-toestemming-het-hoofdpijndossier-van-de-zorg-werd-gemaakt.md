@@ -3,6 +3,12 @@ layout: post
 language: nl
 title: Hoe 'toestemming'​ het hoofdpijndossier van de zorg werd (gemaakt)
 image: /assets/images/articles/2021-06-14-toestemming-hoofdpijndossier/header.jpeg
+category: healthcare
+excerpt: >
+  De wetgeving voor toestemming in de zorg zit eigenlijk best wel goed in
+  elkaar. Ja echt. Het probleem is dat we voor elke uitwisseling gebruik maken
+  van een "elektronisch uitwisselingssysteem". En dat remt communicatie en is
+  niet goed voor onze privacy.
 date: 2021-06-14
 tags: 
   - Zorg

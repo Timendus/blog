@@ -1,0 +1,9 @@
+<a href="{{ post.url }}">
+  <article>
+    <figure>
+      <img src="{{ post.image }}"/>
+    </figure>
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.excerpt | strip_html }}</p>
+  </article>
+</a>

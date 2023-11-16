@@ -1,7 +1,7 @@
 <div class="info {% if page.photo_credit or (page.title and page.titel) or page.layout == 'post' %}active{% endif %}">
   <p>
-    {% if page.photo_credit %}
-      {{ page.photo_credit }} ·
+    {% if page.image_credit %}
+      {{ page.image_credit }} ·
     {% endif %}
     {% if page.title and page.titel %}
       <span data-lang="en">Deze tekst is ook beschikbaar <a href="?language=nl">in het Nederlands</a></span>

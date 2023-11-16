@@ -4,6 +4,11 @@ language: nl
 title: Het "Mitzverstand" van toestemming in de zorg
 image: /assets/images/articles/2020-07-02-het-mitzverstand/mitz.png
 image_credit: Slide uit de Mitz workshop van 2 juli 2020
+category: healthcare
+excerpt: >
+  Hoe de onduidelijke belofte van Mitz het kasteel bedreigt dat we al generaties
+  lang met hand en tand verdedigen. Over vertrouwen uit handen geven en
+  "vertrouw ons maar". En wat een "Mitzverstand" nou eigenlijk betekent?
 date: 2020-07-02
 tags: 
   - Zorg

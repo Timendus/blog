@@ -1,0 +1,42 @@
+---
+layout: page
+image: /assets/images/site/tim-zweden.jpg
+---
+
+{% if site.tags.featured %}
+  <h1 class="index-headline featured">Featured</h1>
+
+  <section class="featured articles">
+    {% for post in site.tags.featured %}
+      {% include article.html %}
+    {% endfor %}
+  </section>
+
+  <h1 class="index-headline normal">Laatste artikelen</h1>
+{% endif %}
+
+<section class="paginated articles">
+  {% for post in paginator.posts %}
+    {% include article.html %}
+  {% endfor %}
+
+  <nav class="pagination" data-lang="en">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}">&larr; Previous</a>
+    {% endif %}
+    <span>Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}">Next  &rarr;</a>
+    {% endif %}
+  </nav>
+
+  <nav class="pagination" data-lang="nl">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}">&larr; Vorige</a>
+    {% endif %}
+    <span>Pagina {{ paginator.page }} van {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}">Volgende  &rarr;</a>
+    {% endif %}
+  </nav>
+</section>

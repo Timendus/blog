@@ -69,7 +69,7 @@ section.header-image {
 
       & a {
         padding: 0.5em 1em;
-        color: #EEEEEE;
+        color: var(--font-color-light);
         border: 0;
         background-color: var(--brand);
         border: 1px solid white;
@@ -104,12 +104,12 @@ section.header-image {
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         font-weight: 300;
-        color: #EEEEEE;
+        color: var(--font-color-light);
         background-color: rgba(0, 0, 0, 0.4);
         
         & a {
-          color: #EEEEEE;
-          border-bottom: 1px solid #EEEEEE;
+          color: var(--font-color-light);
+          border-bottom: 1px solid var(--font-color-light);
         }
       }
     }
