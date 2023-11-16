@@ -1,15 +1,15 @@
 ---
 layout: post
-image: /assets/images/articles/2022-04-08-leren-van-ruimtevaart/header.jpeg
+language: nl
 title: Wat we kunnen leren over toestemmingen in de zorg van het Japanse ruimtevaartprogramma uit de jaren '70
+image: /assets/images/articles/2022-04-08-leren-van-ruimtevaart/header.jpeg
+image_credit: Lambda 4S raket, foto copyright JAXA
 date: 2022-04-08
 tags: 
   - Zorg
   - Toestemming
   - featured
 ---
-
-_Lambda 4S raket, foto copyright JAXA_
 
 ## Design in dienst van doelstellingen
 
@@ -53,7 +53,8 @@ We hebben wetten die stellen dat medische gegevens van patiënten niet zonder
 meer uitgewisseld mogen worden, en dat het gebruik van een "elektronisch
 uitwisselingssysteem" alleen met toestemming van de patiënt mag. In mijn vorige
 artikel, [Hoe 'toestemming' het hoofdpijndossier van de zorg werd (gemaakt)]({{
-site.baseurl }}{% post_url 2021-06-14-toestemming-hoofdpijndossier %}),
+site.baseurl }}{% post_url
+2021-06-14-hoe-toestemming-het-hoofdpijndossier-van-de-zorg-werd-gemaakt %}),
 beschreef ik waarom ik denk dat die wetten behoorlijk goed hout snijden.
 
 Je zou het Nederlandse uitgangspunt kunnen samenvatten als "je mag omwille van

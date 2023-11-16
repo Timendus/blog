@@ -1,7 +1,8 @@
 ---
 layout: post
-image: /assets/images/articles/2021-06-14-toestemming-hoofdpijndossier/header.jpeg
+language: nl
 title: Hoe 'toestemming'​ het hoofdpijndossier van de zorg werd (gemaakt)
+image: /assets/images/articles/2021-06-14-toestemming-hoofdpijndossier/header.jpeg
 date: 2021-06-14
 tags: 
   - Zorg

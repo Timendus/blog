@@ -1,14 +1,15 @@
 ---
 layout: post
+language: nl
+title: Het "Mitzverstand" van toestemming in de zorg
 image: /assets/images/articles/2020-07-02-het-mitzverstand/mitz.png
-title: Het Mitzverstand van toestemming<br/>in de zorg
+image_credit: Slide uit de Mitz workshop van 2 juli 2020
 date: 2020-07-02
 tags: 
   - Zorg
   - Toestemming
+  - featured
 ---
-
-_Slide uit de Mitz workshop van 2 juli 2020_
 
 Dit is niet mijn grapje.
 
@@ -124,8 +125,8 @@ hebben en niet kwijtraken. En dat vereist een compleet andere manier van kijken
 naar het identificeren van burgers dan vandaag de dag met DigiD mogelijk is.
 Maar dat is een onderwerp voor een andere keer.
 
-![Screenshot van de Mitz applicatie uit de
-webinar](/assets/images/articles/2020-07-02-het-mitzverstand/screenshot.png)
+<img src="/assets/images/articles/2020-07-02-het-mitzverstand/screenshot.png"
+title="Screenshot van de Mitz applicatie uit de webinar" class="extra-large">
 
 Er is stiekem nog een derde probleem, namelijk het probleem van meta-informatie
 lekken en de correlatie-aanval: het feit dat je een toestemming hebt verleend
