@@ -1,1 +1,23 @@
-<!-- Header is currently empty -->
+<div class="info {% if page.photo_credit or (page.title and page.titel) or page.layout == 'post' %}active{% endif %}">
+  <p>
+    {% if page.photo_credit %}
+      {{ page.photo_credit }} ·
+    {% endif %}
+    {% if page.title and page.titel %}
+      <span data-lang="en">Deze tekst is ook beschikbaar <a href="?language=nl">in het Nederlands</a></span>
+      <span data-lang="nl">This text is also available <a href="?language=en">in English</a></span>
+    {% endif %}
+    {% if page.title and page.titel and page.layout == "post" %}
+      ·
+    {% endif %}
+    {% if page.layout == "post" %}
+      <span data-lang="en">Reading time: about</span>
+      <span data-lang="nl">Leestijd: ongeveer</span>
+      <span id="reading-time"></span>
+      <span data-lang="en">minutes</span>
+      <span data-lang="nl">minuten</span>
+    {% endif %}
+  </p>
+</div>
+
+<h1><a href="{{ site.url }}">{{ site.title }}</a></h1>

@@ -4,65 +4,169 @@ html, body {
   background-color: var(--background-color);
 }
 
+/* Hide all dual-language texts until the language plugin has made the selection */
+body.multilanguage {
+  [data-lang] {
+    display: none;
+  }
+}
+
 /* This is the thing we're actually scrolling in,
    so we can do magical parallax stuff */
-.wrapper {
+main.wrapper {
+  --header-image-height: 50%;
   height: 100vh;
   perspective: 10px;
-  perspective-origin: center center;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
 /* This is the parallax-scrolling header image */
-.header-image {
+section.header-image {
   position: relative;
   z-index: 0;
   width: 100%;
-  height: 80%;
-  margin-bottom: -8em;  /* This pulls the content below over the image */
+  height: var(--header-image-height);
+  margin-bottom: -12em;  /* This pulls the content below over the image */
   transform-style: preserve-3d;
 
-  & img {
+  /* Position child elements over each other */
+  & > * {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+  }
+
+  & img {
+    z-index: 0;
     object-fit: cover;
-    transform: translate3d(0px, -15%, -10px) scale(2);
+    transform: translateZ(-10px) scale(2);
+    transform-origin: center bottom;
   }
 
-  &.half-size {
-    height: 50%;
-
-    & img {
-      transform: translate3d(0px, -50%, -10px) scale(2);
-    }
+  /* This is the gray background that slides over the header image */
+  & .scrolling-background {
+    top: 100%;
+    z-index: 1;
+    transform: translateZ(-3px) scale(1.3);
+    transform-origin: center top;
+    background-color: var(--background-color);
   }
 
-  @media screen and (max-width: 768px) {
-    &, &.half-size {
-      margin-bottom: -4em;
-      height: 30%;
+  /* This is the section that shows the site title */
+  & .scrolling-foreground {
+    /* display: flex; */
+    z-index: 3;
+    /* align-items: center; */
 
-      & img {
-        transform: translate3d(0px, -115%, -10px) scale(2);
+    transform: translateZ(1px) scale(0.9);
+    transform-origin: center bottom;
+
+    & h1 {
+      margin: 2em;
+
+      & a {
+        padding: 0.5em 1em;
+        color: #EEEEEE;
+        border: 0;
+        background-color: var(--brand);
+        border: 1px solid white;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 5px 5px 0px var(--brand);
+      }
+
+      @media screen and (max-width: 768px) {
+        margin: 25vh 0 0 0;
+        text-align: center;
       }
     }
+
+    /* This is the little info string at the top right */
+    & .info {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+
+      & p {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline;
+        margin: 0 2em 0 2em;
+        padding: 0.4em 1.2em 0.4em 1.2em;
+        float: right;
+
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        font-weight: 300;
+        color: #EEEEEE;
+        background-color: rgba(0, 0, 0, 0.4);
+        
+        & a {
+          color: #EEEEEE;
+          border-bottom: 1px solid #EEEEEE;
+        }
+      }
+    }
+  }
+
+  /* Changes for the mobile version */
+  @media screen and (max-width: 920px) {
+      margin-bottom: -4em;
   }
 }
 
 /* This is the actual page content */
 section.page {
   position: relative;
-  z-index: 1;
+  z-index: 2;
+}
 
-  /* This gradient background scrolls over the parallax image */
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    transparent 4em,
-    var(--background-color) 4em,
-    var(--background-color) 100%
-  );
+section.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: var(--header-image-height);
+  margin-top: 6em;
 
-  /* Whatever other content is in the page gets positioned on that background */
+  & img {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: sepia(0.2) opacity(0.6);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(
+      to bottom,
+      var(--background-color) 0%,
+      transparent 30%,
+      transparent 100%
+    );
+    background: linear-gradient(
+      to bottom in hsl,
+      var(--background-color) 0%,
+      transparent 30%,
+      transparent 100%
+    );
+  }
+
+  & footer {
+    z-index: 3;
+  }
 }

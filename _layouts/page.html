@@ -2,12 +2,6 @@
 layout: default
 ---
 
-{% if page.image %}
-  <section class="header-image {% if page.layout != 'post' %}half-size{% endif %}">
-    <img src="{{ page.image }}"/>
-  </section>
-{% endif %}
-
 <section class="page">
   <div class="content">
     {% if page.layout == "post" %}
@@ -26,11 +20,6 @@ layout: default
           <span class="date">{{ page.date | date: "%-d-%-m-%Y" }}</span>
         {% endif %}
       </div>
-    {% endif %}
-
-    {% if page.title and page.titel %}
-      <p class="language" data-lang="en">Deze tekst is ook beschikbaar <a href="?language=nl">in het Nederlands</a>.</p>
-      <p class="language" data-lang="nl">This text is also available <a href="?language=en">in English</a>.</p>
     {% endif %}
 
     {% if page.title and page.titel %}

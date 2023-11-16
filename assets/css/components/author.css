@@ -1,11 +1,14 @@
 .content .author {
   display: grid;
   margin: 0 0 2em 0;
+  padding-bottom: 2em;
   align-items: center;
-  grid-template-columns: 75px auto max-content;
+  grid-template-columns: 75px 1fr max-content;
   grid-template-areas:
   "image author date"
-  "image description description";
+  "image description empty";
+
+  border-bottom: 1px solid var(--hr-color);
 
   & img {
     grid-area: image;
@@ -21,8 +24,10 @@
   }
   & .description {
     grid-area: description;
+    font-size: 0.9em;
     font-style: italic;
     font-weight: 100;
+    min-width: 0;
   }
   & .date {
     grid-area: date;

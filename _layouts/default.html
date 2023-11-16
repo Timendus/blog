@@ -3,11 +3,28 @@
   <head>
     {% include head.html %}
   </head>
-  <body>
-    <div class="wrapper">
-      {% include header.html %}
+  <body class="multilanguage">
+    <main class="wrapper">
+
+      {% if page.image %}
+        <section class="header-image">
+          <div class="scrolling-foreground">
+            {% include header.html %}
+          </div>
+          <img src="{{ page.image }}"/>
+          <div class="scrolling-background"></div>
+        </section>
+      {% endif %}
+
       {{ content }}
-      {% include footer.html %}
-    </div>
+
+      {% if page.image %}
+        <section class="footer">
+          <img src="{{ page.image }}"/>
+          {% include footer.html %}
+        </section>
+      {% endif %}
+
+    </main>
   </body>
 </html>

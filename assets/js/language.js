@@ -18,10 +18,13 @@ if ( parameters.has("language") ) {
   }
 }
 
-// Hide elements with the "wrong" language
 window.addEventListener('DOMContentLoaded', () => {
+  // Hide elements with the "wrong" language
   document.querySelectorAll(`[data-lang]`).forEach(item => {
     if ( item.attributes['data-lang']?.textContent != selectedLanguage )
       item.style.display = 'none';
   });
+
+  // Remove class from body to stop hiding everything
+  document.body.classList.remove('multilanguage');
 });
