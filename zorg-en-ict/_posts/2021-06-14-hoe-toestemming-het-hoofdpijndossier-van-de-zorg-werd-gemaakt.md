@@ -1,19 +1,22 @@
 ---
 layout: post
+date: 2021-06-14
 language: nl
-title: Hoe 'toestemming'​ het hoofdpijndossier van de zorg werd (gemaakt)
 image: /assets/images/articles/2021-06-14-toestemming-hoofdpijndossier/header.jpeg
-category: healthcare
+
+title: How 'consent' became the headache of healthcare
 excerpt: >
+  The legislation for consent in Dutch healthcare is actually quite well put
+  together. Seriously! The problem is that we use an "elektronisch
+  uitwisselingssysteem" for every exchange, and that hinders communication and
+  is not good for our privacy.
+
+titel: Hoe 'toestemming'​ het hoofdpijndossier van de zorg werd (gemaakt)
+samenvatting: >
   De wetgeving voor toestemming in de zorg zit eigenlijk best wel goed in
   elkaar. Ja echt. Het probleem is dat we voor elke uitwisseling gebruik maken
   van een "elektronisch uitwisselingssysteem". En dat remt communicatie en is
   niet goed voor onze privacy.
-date: 2021-06-14
-tags: 
-  - Zorg
-  - Toestemming
-  - featured
 ---
 
 We mogen het soms ook best toegeven als dingen gewoon goed geregeld zijn in

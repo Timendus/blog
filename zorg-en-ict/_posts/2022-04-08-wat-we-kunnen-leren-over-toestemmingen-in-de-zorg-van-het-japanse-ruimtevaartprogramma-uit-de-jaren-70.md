@@ -1,19 +1,22 @@
 ---
 layout: post
+date: 2022-04-08
 language: nl
-title: Wat we kunnen leren over toestemmingen in de zorg van het Japanse ruimtevaartprogramma uit de jaren '70
 image: /assets/images/articles/2022-04-08-leren-van-ruimtevaart/header.jpeg
-image_credit: Lambda 4S raket, foto copyright JAXA
-category: healthcare
+
+title: What we can learn about consent in healthcare from the Japanese space program from the '70s
+image_credit: Lambda 4S rocket, photo copyright JAXA
 excerpt: >
+  Sometimes it seems like we have to choose between privacy and practicality. Or
+  between betraying our values or reverting to the fax machine. The Japanese
+  faced a similar challenge and made the impossible possible.
+
+titel: Wat we kunnen leren over toestemmingen in de zorg van het Japanse ruimtevaartprogramma uit de jaren '70
+afbeelding_credit: Lambda 4S raket, foto copyright JAXA
+samenvatting: >
   Soms lijkt het alsof we moeten kiezen tussen privacy en praktijk. Of kiezen
   tussen morrelen aan onze mores en terug naar de fax. De Japanners stonden
   voor een vergelijkbare uitdaging, en maakten het onmogelijke mogelijk.
-date: 2022-04-08
-tags: 
-  - Zorg
-  - Toestemming
-  - featured
 ---
 
 ## Design in dienst van doelstellingen
@@ -59,7 +62,7 @@ meer uitgewisseld mogen worden, en dat het gebruik van een "elektronisch
 uitwisselingssysteem" alleen met toestemming van de patiënt mag. In mijn vorige
 artikel, [Hoe 'toestemming' het hoofdpijndossier van de zorg werd (gemaakt)]({{
 site.baseurl }}{% post_url
-2021-06-14-hoe-toestemming-het-hoofdpijndossier-van-de-zorg-werd-gemaakt %}),
+zorg-en-ict/2021-06-14-hoe-toestemming-het-hoofdpijndossier-van-de-zorg-werd-gemaakt %}),
 beschreef ik waarom ik denk dat die wetten behoorlijk goed hout snijden.
 
 Je zou het Nederlandse uitgangspunt kunnen samenvatten als "je mag omwille van

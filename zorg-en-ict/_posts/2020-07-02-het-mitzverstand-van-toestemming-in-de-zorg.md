@@ -1,19 +1,22 @@
 ---
 layout: post
+date: 2020-07-02
 language: nl
-title: Het "Mitzverstand" van toestemming in de zorg
 image: /assets/images/articles/2020-07-02-het-mitzverstand/mitz.png
-image_credit: Slide uit de Mitz workshop van 2 juli 2020
-category: healthcare
+
+title: The "Mitzunderstanding" of consent in healthcare
+image_credit: Slide from the Mitz workshop of 2 juli 2020
 excerpt: >
+  How the unclear promise of Mitz threatens the castle that we've been defending
+  for generations. About relinquishing trust and the "just trust us" mentality.
+  And what is the meaning of a "Mitzunderstanding"?
+
+titel: Het "Mitzverstand" van toestemming in de zorg
+afbeelding_credit: Slide uit de Mitz workshop van 2 juli 2020
+samenvatting: >
   Hoe de onduidelijke belofte van Mitz het kasteel bedreigt dat we al generaties
   lang met hand en tand verdedigen. Over vertrouwen uit handen geven en
   "vertrouw ons maar". En wat een "Mitzverstand" nou eigenlijk betekent?
-date: 2020-07-02
-tags: 
-  - Zorg
-  - Toestemming
-  - featured
 ---
 
 Dit is niet mijn grapje.
