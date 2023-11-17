@@ -5,7 +5,7 @@
 
 // What language are we currently in?
 const postLanguage = document.querySelector('html').getAttribute('lang');
-const currentLanguage = localStorage.getItem("language") || postLanguage;
+const currentLanguage = localStorage.getItem("language") || postLanguage || "nl";
 let selectedLanguage = currentLanguage;
 
 // Is the user requesting a different language?
