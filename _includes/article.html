@@ -9,14 +9,17 @@
       <h1 data-lang="en">{{ post.title }}</h1>
       <h1 data-lang="nl">{{ post.titel }}</h1>
     {% else %}
-      <h1>{{ post.title }}</h1>
+      <h1>{{ post.title }}{{ post.titel }}</h1>
     {% endif %}
 
-    {% if post.excerpt_en and post.excerpt_nl %}
-      <p data-lang="en">{{ post.excerpt_en | strip_html }}</p>
-      <p data-lang="nl">{{ post.excerpt_nl | strip_html }}</p>
+    {% if post.excerpt and post.samenvatting %}
+      <p data-lang="en">{{ post.excerpt | strip_html }}</p>
+      <p data-lang="nl">{{ post.samenvatting | strip_html }}</p>
     {% else %}
-      <p>{{ post.excerpt | strip_html }}</p>
+      <p>
+        {{ post.excerpt | strip_html }}
+        {{ post.samenvatting | strip_html }}
+      </p>
     {% endif %}
 
   </article>

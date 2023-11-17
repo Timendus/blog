@@ -1,13 +1,18 @@
-<div class="info {% if page.photo_credit or (page.title and page.titel) or page.layout == 'post' %}active{% endif %}">
+<div class="info {% if page.photo_credit or page.languages or page.layout == 'post' %}active{% endif %}">
   <p>
-    {% if page.image_credit %}
-      {{ page.image_credit }} ·
+    {% if page.image_credit and page.afbeelding_credit %}
+      <span data-lang="en">{{ page.image_credit }}</span>
+      <span data-lang="nl">{{ page.afbeelding_credit }}</span>
+      ·
+    {% elsif page.image_credit or page.afbeelding_credit %}
+      <span>{{ page.image_credit }}{{ page.afbeelding_credit }}</span>
+      ·
     {% endif %}
-    {% if page.title and page.titel %}
+    {% if page.languages %}
       <span data-lang="en">Deze pagina is ook beschikbaar <a href="?language=nl">in het Nederlands</a></span>
       <span data-lang="nl">This page is also available <a href="?language=en">in English</a></span>
     {% endif %}
-    {% if page.title and page.titel and page.layout == "post" %}
+    {% if page.languages and page.layout == "post" %}
       ·
     {% endif %}
     {% if page.layout == "post" %}

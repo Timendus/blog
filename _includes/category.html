@@ -1,0 +1,7 @@
+<h1>{{ include.title }}</h1>
+
+<section class="featured articles">
+  {% for post in include.posts %}
+    {% include article.html %}
+  {% endfor %}
+</section>

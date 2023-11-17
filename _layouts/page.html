@@ -29,6 +29,15 @@ layout: default
       <h1>{{ page.title }}{{ page.titel }}</h1>
     {% endif %}
 
+    {% unless page.languages %}
+      {% if page.language != "en" %}
+        <p data-lang="en"><i>This article is written in Dutch. Sorry for that.</i></p>
+      {% endif %}
+      {% if page.language != "nl" %}
+        <p data-lang="nl"><i>Dit artikel is alleen beschikbaar in het Engels. Sorry daarvoor.</i></p>
+      {% endif %}
+    {% endunless %}
+
     {{ content }}
   </div>
 

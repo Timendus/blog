@@ -1,16 +1,27 @@
 ---
 layout: page
 image: /assets/images/site/tim-zweden.jpg
+languages:
+ - en
+ - nl
 ---
 
-{% for category in site.categories %}
-  <h1>{{ category[0] }}</h1>
+<div data-lang="nl">
 
-  <section class="featured articles">
-    {% for post in category[1] %}
-      {% include article.html %}
-    {% endfor %}
-  </section>
-{% endfor %}
+  <p>Welkom op timfranssen.nl!</p>
 
-<p class="right"><a href="{{ 'archive' | relative_url }}">Alle artikelen &rarr;</a></p>
+  {% include category.html title="Zorg & ICT" posts=site.categories.zorg-en-ict %}
+
+  <p class="right"><a href="{{ 'archive' | relative_url }}">Alle artikelen &rarr;</a></p>
+
+</div>
+
+<div data-lang="en">
+
+  <p>Welcome to timfranssen.nl!</p>
+
+  {% include category.html title="Zorg & ICT" posts=site.categories.zorg-en-ict %}
+
+  <p class="right"><a href="{{ 'archive' | relative_url }}">All articles &rarr;</a></p>
+
+</div>

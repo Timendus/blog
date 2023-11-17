@@ -1,5 +1,8 @@
 ---
 layout: page
+languages:
+ - en
+ - nl
 title: About timfranssen.nl
 titel: Over timfranssen.nl
 permalink: /about/
