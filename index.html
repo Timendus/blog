@@ -8,9 +8,27 @@ languages:
 
 <div data-lang="nl">
 
-  <p>Welkom op timfranssen.nl!</p>
+  <h1>Hey!</h1>
+  <p>
+    Welkom op timfranssen.nl! Ik heb deze website gemaakt om mijn artikeltjes
+    van de afgelopen jaren (en de artikeltjes die ik nog in mijn hoofd heb
+    zitten) een fijn thuis te geven. En omdat mijn vorige website er echt niet
+    meer uit zag 😄
+  </p>
+  <p>
+    Ik heb momenteel nog maar één categorie met artikeltjes, en allemaal
+    ongeveer over hetzelfde onderwerp, maar ik verwacht dat dat de komende jaren
+    wel gaat groeien.
+  </p>
+  <p>
+    Groetjes en veel leesplezier!
+  </p>
+
+  <hr/>
 
   {% include category.html title="Zorg & ICT" posts=site.categories.zorg-en-ict %}
+
+  <hr/>
 
   <p class="right"><a href="{{ 'archive' | relative_url }}">Alle artikelen &rarr;</a></p>
 
@@ -18,9 +36,25 @@ languages:
 
 <div data-lang="en">
 
-  <p>Welcome to timfranssen.nl!</p>
+  <h1>Hey!</h1>
+  <p>
+    Welcome to timfranssen.nl! I made this website to give my little articles
+    from the last couple of years (and those that are still in my head) a nice
+    new home. And also because my previous website really didn't look the part
+    anymore 😄
+  </p>
+  <p>
+    I currently only have articles in a single category, and they all concern
+    pretty much the same subject, but I expect that to grow steadily over the
+    next few years.
+  </p>
+  <p>
+    Cheers and have fun reading!
+  </p>
 
-  {% include category.html title="Zorg & ICT" posts=site.categories.zorg-en-ict %}
+  <hr/>
+  {% include category.html title="Healthcare & IT" posts=site.categories.zorg-en-ict %}
+  <hr/>
 
   <p class="right"><a href="{{ 'archive' | relative_url }}">All articles &rarr;</a></p>
 
