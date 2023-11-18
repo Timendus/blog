@@ -6,7 +6,7 @@ languages:
 title: About timfranssen.nl
 titel: Over timfranssen.nl
 permalink: /about/
-image: /assets/images/site/tim-hiken.jpg
+image: /assets/images/site/tim-hiken.webp
 ---
 
 <div data-lang="en" markdown="1">

@@ -2,7 +2,7 @@
 layout: post
 date: 2022-04-08
 language: nl
-image: /assets/images/articles/2022-04-08-leren-van-ruimtevaart/header.jpeg
+image: /assets/images/articles/2022-04-08-leren-van-ruimtevaart/header.webp
 
 title: What we can learn about consent in healthcare from the Japanese space program from the '70s
 image_credit: Lambda 4S rocket, photo copyright JAXA

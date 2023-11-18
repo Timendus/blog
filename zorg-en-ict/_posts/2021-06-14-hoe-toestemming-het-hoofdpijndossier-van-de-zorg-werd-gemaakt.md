@@ -2,7 +2,7 @@
 layout: post
 date: 2021-06-14
 language: nl
-image: /assets/images/articles/2021-06-14-toestemming-hoofdpijndossier/header.jpeg
+image: /assets/images/articles/2021-06-14-toestemming-hoofdpijndossier/header.webp
 
 title: How 'consent' became the headache of healthcare
 excerpt: >
