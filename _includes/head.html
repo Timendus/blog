@@ -7,7 +7,11 @@
 <link rel="stylesheet" type="text/css" media="print" href="{{ "/assets/css/print.css" | relative_url }}" />
 <link rel="shortcut icon" href="{{ "/assets/images/site/favicon.png" | prepend: site.baseurl }}" type="image/png"/>
 
-<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+{% assign title = page.title %}
+{% if page.title and page.titel and page.language == "nl" %}
+  {% assign title = page.titel %}
+{% endif %}
+<title>{% if title %}{{ title }} - {% endif %}{{ site.title }}</title>
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}" />
 
 
