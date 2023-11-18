@@ -7,12 +7,12 @@ layout: default
     {% if page.layout == "post" %}
       <div class="author">
         {% if page.author %}
-          <img src="/assets/images/authors/{{ page.author }}.png"/>
+          <img src="/assets/images/authors/{{ page.author }}.webp"/>
           <span class="name">{{ page.author }}</span>
           <span class="description" data-lang="en">Guest author</span>
           <span class="description" data-lang="nl">Gastauteur</span>
         {% else %}
-          <img src="/assets/images/authors/{{ site.author }}.png"/>
+          <img src="/assets/images/authors/{{ site.author }}.webp"/>
           <span class="name">{{ site.author }}</span>
           <span class="description">{{ site.bio }}</span>
         {% endif %}
