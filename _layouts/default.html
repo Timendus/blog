@@ -11,7 +11,7 @@
           <div class="scrolling-foreground">
             {% include header.html %}
           </div>
-          <img src="{{ page.image }}"/>
+          <img src="{{ page.image }}" loading="lazy" alt="Header image"/>
           <div class="scrolling-background"></div>
         </section>
       {% endif %}
@@ -20,7 +20,7 @@
 
       {% if page.image %}
         <section class="footer">
-          <img src="{{ page.image }}"/>
+          <img src="{{ page.image }}" loading="lazy" alt="Footer image"/>
           {% include footer.html %}
         </section>
       {% endif %}
