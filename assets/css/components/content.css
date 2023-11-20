@@ -82,4 +82,15 @@
       background: var(--table-even-row-background);
     }
   }
+
+  & .image-group {
+    display: flex;
+    gap: 2em;
+    width: 100%;
+    margin: 1em 0 2.6em 0;
+
+    & img {
+      flex: 1 1 50%;
+    }
+  }
 }
