@@ -110,3 +110,7 @@ keuzes die verankerd liggen in bestaande technologie. Dan is het mijns inziens
 tijd om nieuwe technologische keuzes te gaan maken, niet om aan je normen en
 waarden te gaan tornen. Ik hoop dat onze minister en onze politici zich dat ook
 beseffen.
+
+_Dit artikel is eerder gepubliceerd op LinkedIn. [Bezoek de oorspronkelijke
+post](https://www.linkedin.com/pulse/wat-we-kunnen-leren-over-toestemmingen-de-zorg-van-het-tim-franssen)
+om mee te doen aan de discussie._

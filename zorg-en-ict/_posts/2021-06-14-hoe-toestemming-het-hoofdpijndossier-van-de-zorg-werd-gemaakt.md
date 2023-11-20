@@ -240,3 +240,7 @@ Volgens mij moet datgene dat we als maatschappij willen bereiken met
 gegevensuitwisseling leidend zijn, niet de systemen die we daar toevallig
 vandaag voor gebruiken. De huidige wetgeving zit volgens mij al behoorlijk dicht
 in de goede buurt. En dat mag ook wel eens gezegd worden.
+
+_Dit artikel is eerder gepubliceerd op LinkedIn. [Bezoek de oorspronkelijke
+post](https://www.linkedin.com/pulse/hoe-toestemming-het-hoofdpijndossier-van-de-zorg-werd-tim-franssen)
+om mee te doen aan de discussie._

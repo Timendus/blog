@@ -154,3 +154,7 @@ Mitzverstand uit de wereld te kunnen helpen, dat nog in dezelfde webinar geen
 misverstand blijkt te zijn. Misschien is het geen synoniem maar een eufemisme:
 een Mitzverstand is iets dat iedereen vreest, waarvan Mitz niet wil dat we het
 begrijpen..?
+
+_Dit artikel is eerder gepubliceerd op LinkedIn. [Bezoek de oorspronkelijke
+post](https://www.linkedin.com/pulse/het-mitzverstand-van-toestemming-de-zorg-tim-franssen/)
+om mee te doen aan de discussie._
