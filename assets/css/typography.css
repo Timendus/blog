@@ -31,7 +31,7 @@ p {
   }
 }
 
-p.leader {
+.leader {
   font-weight: 100;
   font-size: 1.2em;
   color: var(--font-color-darker);
@@ -61,7 +61,7 @@ code {
 }
 
 ul, ol {
-  margin: 1em 2em 1.5em 2em;
+  margin: 1em 2em 2em 2em;
   line-height: 1.8em;
   text-align: justify;
 
