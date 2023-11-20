@@ -2,7 +2,7 @@
 layout: post
 date: 2023-06-23
 language: nl
-image: /assets/images/articles/2023-06-23-mijn-drie-principes-van-vijf-jaar-nuts/brug.webp
+image: /assets/images/articles/2023-06-23-mijn-drie-principes-van-vijf-jaar-nuts/banner.webp
 
 title: My three principles from five years of Nuts
 excerpt: >
