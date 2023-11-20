@@ -2,7 +2,7 @@
 layout: post
 date: 2020-07-02
 language: nl
-image: /assets/images/articles/2020-07-02-het-mitzverstand/mitz.png
+image: /assets/images/articles/2020-07-02-het-mitzverstand/banner.webp
 
 title: The "Mitzunderstanding" of consent in healthcare
 image_credit: Slide from the Mitz workshop of 2 juli 2020
