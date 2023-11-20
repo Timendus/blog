@@ -5,8 +5,9 @@ plugins:
 
 # Site settings
 title: "timfranssen.nl"
-description: > # this means to ignore newlines until "email:"
-  Just stuff I think up
+description: > # this means to ignore newlines until the next key
+  My personal website and blog, where I publish articles without being dependent
+  on some social medium.
 paginate: 6
 paginate_path: /archive/page:num/
 

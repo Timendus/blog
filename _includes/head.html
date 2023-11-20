@@ -7,13 +7,23 @@
 <link rel="stylesheet" type="text/css" media="print" href="{{ "/assets/css/print.css" | relative_url }}" />
 <link rel="shortcut icon" href="{{ "/assets/images/site/favicon.png" | prepend: site.baseurl }}" type="image/png"/>
 
-{% assign title = page.title %}
+{% assign title = page.title | strip_newlines %}
 {% if page.title and page.titel and page.language == "nl" %}
-  {% assign title = page.titel %}
+  {% assign title = page.titel | strip_newlines %}
 {% endif %}
-<title>{% if title %}{{ title }} - {% endif %}{{ site.title }}</title>
-<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}" />
+{% if title and title != "" %}
+  {% assign title = title | append: " - " | append: site.title %}
+{% else %}
+  {% assign title = site.title | strip_newlines %}
+{% endif %}
 
+{% assign description = page.excerpt | truncate: 200 | default: site.description | strip_html | strip_newlines %}
+{% if page.excerpt and page.samenvatting and page.language == "nl" %}
+  {% assign description = page.samenvatting | strip_html | strip_newlines %}
+{% endif %}
+
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}" />
 
 <link rel="canonical" href="{{ page.url | absolute_url }}"/>
 <link rel="alternate" hreflang="en" href="{{site.url}}{{page.url}}?language=en" />
@@ -23,25 +33,10 @@
 <meta name="MobileOptimized" content="320" />
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-{% if site.twitter_handle %}
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="{{ site.twitter_handle }}" />
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-  <meta name="twitter:image" content="{{ site.logo | relative_url }}" />
-  {% if page.excerpt %}
-    <meta name="twitter:description"  content="{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}" />
-  {% elsif site.description %}
-    <meta name="twitter:description" content="{{ site.description | strip_html | strip_newlines | truncate: 200 }}" />
-  {% endif %}
-{% endif %}
 
 <meta property="og:site_name" content="{{ site.title }}" />
-<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
-{% if page.excerpt %}
-  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}" />
-{% elsif site.description %}
-  <meta property="og:description" content="{{ site.description | strip_html | strip_newlines | truncate: 200 }}" />
-{% endif %}
+<meta property="og:title" content="{{ title }}"/>
+<meta property="og:description" content="{{ description }}" />
 <meta property="og:image" content="{% if page.image %}{{ page.image | relative_url }}{% else %}{{ site.logo | relative_url }}{% endif %}" />
 <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" >
 <meta property="og:type" content="blog" />
